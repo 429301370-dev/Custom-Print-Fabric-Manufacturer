@@ -1,0 +1,792 @@
+<div class="fabric-book">
+<section class="intro">
+<h2>Fabric Library</h2>
+<p>Find the right fabric for your custom print project.</p>
+<div class="top-actions">
+<button onclick="filterFabric('')">View All Fabrics</button>
+<a href="https://drive.google.com/drive/folders/1bBEgKRHO46Saa9qvseOnQ3Km9dDiMoVB?usp=drive_link" target="_blank" rel="noopener">Design Gallery</a>
+<a href="mailto:info@example.com?subject=Fabric%20Inquiry">Send Inquiry</a>
+</div>
+</section>
+<section class="categories">
+<h3>Shop by Type</h3>
+<div class="card-grid"><button class="type-card" onclick="filterFabric('Cotton Jersey Fabric')">
+<span class="type-name">Cotton Jersey Fabric</span>
+<span class="type-count">6 fabrics</span>
+<span class="type-example">Cotton Lycra Knit 280gsm</span>
+</button><button class="type-card" onclick="filterFabric('French Terry Fabric')">
+<span class="type-name">French Terry Fabric</span>
+<span class="type-count">7 fabrics</span>
+<span class="type-example">Cotton French Terry 250</span>
+</button><button class="type-card" onclick="filterFabric('Cotton Woven Fabric')">
+<span class="type-name">Cotton Woven Fabric</span>
+<span class="type-count">8 fabrics</span>
+<span class="type-example">Heavy Cotton Woven</span>
+</button><button class="type-card" onclick="filterFabric('Rib Knit Fabric')">
+<span class="type-name">Rib Knit Fabric</span>
+<span class="type-count">8 fabrics</span>
+<span class="type-example">4*2 Organic Cotton Rib Knit</span>
+</button><button class="type-card" onclick="filterFabric('Corduroy Stretch Fabric')">
+<span class="type-name">Corduroy Stretch Fabric</span>
+<span class="type-count">2 fabrics</span>
+<span class="type-example">28T Cotton stretch corduroy</span>
+</button><button class="type-card" onclick="filterFabric('Canvas Fabric')">
+<span class="type-name">Canvas Fabric</span>
+<span class="type-count">1 fabrics</span>
+<span class="type-example">Cotton Canvas Fabric</span>
+</button><button class="type-card" onclick="filterFabric('Pique Fabric')">
+<span class="type-name">Pique Fabric</span>
+<span class="type-count">1 fabrics</span>
+<span class="type-example">Cotton Polo Pique Knit fabric</span>
+</button><button class="type-card" onclick="filterFabric('Flannel Fabric')">
+<span class="type-name">Flannel Fabric</span>
+<span class="type-count">2 fabrics</span>
+<span class="type-example">Cotton Flannel Fabric</span>
+</button><button class="type-card" onclick="filterFabric('Bamboo Jersey')">
+<span class="type-name">Bamboo Jersey</span>
+<span class="type-count">1 fabrics</span>
+<span class="type-example">Bamboo Lycra Jersey</span>
+</button><button class="type-card" onclick="filterFabric('Muslin Fabric')">
+<span class="type-name">Muslin Fabric</span>
+<span class="type-count">3 fabrics</span>
+<span class="type-example">Double Gauze Muslin</span>
+</button><button class="type-card" onclick="filterFabric('Interlock Fabric')">
+<span class="type-name">Interlock Fabric</span>
+<span class="type-count">1 fabrics</span>
+<span class="type-example">Cotton Interlock Knit Fabric</span>
+</button><button class="type-card" onclick="filterFabric('Linen Fabric')">
+<span class="type-name">Linen Fabric</span>
+<span class="type-count">2 fabrics</span>
+<span class="type-example">Linen Woven 9S</span>
+</button><button class="type-card" onclick="filterFabric('Minky Fabric')">
+<span class="type-name">Minky Fabric</span>
+<span class="type-count">3 fabrics</span>
+<span class="type-example">Minky Fabric</span>
+</button><button class="type-card" onclick="filterFabric('Double Brushed Poly')">
+<span class="type-name">Double Brushed Poly</span>
+<span class="type-count">2 fabrics</span>
+<span class="type-example">Double Brushed Poly Knit</span>
+</button><button class="type-card" onclick="filterFabric('Satin Fabric')">
+<span class="type-name">Satin Fabric</span>
+<span class="type-count">4 fabrics</span>
+<span class="type-example">Cotton Stretch Satin</span>
+</button><button class="type-card" onclick="filterFabric('Tencel Fabric')">
+<span class="type-name">Tencel Fabric</span>
+<span class="type-count">2 fabrics</span>
+<span class="type-example">60S Tencel woven fabric</span>
+</button><button class="type-card" onclick="filterFabric('Athletic Knit Fabric')">
+<span class="type-name">Athletic Knit Fabric</span>
+<span class="type-count">2 fabrics</span>
+<span class="type-example">Glitter Holographic Stretch</span>
+</button><button class="type-card" onclick="filterFabric('PUL')">
+<span class="type-name">PUL</span>
+<span class="type-count">1 fabrics</span>
+<span class="type-example">PUL Fabric</span>
+</button><button class="type-card" onclick="filterFabric('Swim')">
+<span class="type-name">Swim</span>
+<span class="type-count">1 fabrics</span>
+<span class="type-example">Swim Fabric</span>
+</button><button class="type-card" onclick="filterFabric('Multiple Fabrics')">
+<span class="type-name">Multiple Fabrics</span>
+<span class="type-count">15 fabrics</span>
+<span class="type-example">Cotton waffle knit fabric</span>
+</button></div>
+</section>
+<section class="full-list" id="fullList">
+<div class="list-head">
+<div><h3>Full Fabric List</h3><p><span id="fabricCount">72</span> matching fabrics - all specs visible without horizontal scrolling</p></div>
+<input id="fabricSearch" placeholder="Search fabric, code, type, GSM..." onkeyup="applySearch()">
+</div>
+<div class="product-grid" id="fabricCards"><article class="fabric-item" data-type="Cotton Jersey Fabric">
+<div class="item-top"><span class="item-code">CL280</span><span class="item-type">Cotton Jersey Fabric</span></div>
+<h4>Cotton Lycra Knit 280gsm</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>270-280 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>95%C 5%SP</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Cotton Jersey Fabric">
+<div class="item-top"><span class="item-code">CL260</span><span class="item-type">Cotton Jersey Fabric</span></div>
+<h4>Heavy Cotton Lycra Knit</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>250-260 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>95%C 5%SP</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Cotton Jersey Fabric">
+<div class="item-top"><span class="item-code">CL240</span><span class="item-type">Cotton Jersey Fabric</span></div>
+<h4>Cotton Lycra Knit 240gsm</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>230-240 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>95%C 5%SP</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Cotton Jersey Fabric">
+<div class="item-top"><span class="item-code">CL220</span><span class="item-type">Cotton Jersey Fabric</span></div>
+<h4>Medium Cotton Lycra Knit</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>210-220 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>95%C 5%SP</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Cotton Jersey Fabric">
+<div class="item-top"><span class="item-code">CL180</span><span class="item-type">Cotton Jersey Fabric</span></div>
+<h4>Light Cotton Lycra Knit</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>170-180 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>95%C 5%SP</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Cotton Jersey Fabric">
+<div class="item-top"><span class="item-code">GCL250</span><span class="item-type">Cotton Jersey Fabric</span></div>
+<h4>Organic Cotton Lycra</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>240-250 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>95%OC 5%SP</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="French Terry Fabric">
+<div class="item-top"><span class="item-code">CFT250</span><span class="item-type">French Terry Fabric</span></div>
+<h4>Cotton French Terry 250</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>250 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>95%C 5%SP</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="French Terry Fabric">
+<div class="item-top"><span class="item-code">CFT280</span><span class="item-type">French Terry Fabric</span></div>
+<h4>Cotton French Terry 280</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>280-300 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>95%C 5%SP</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="French Terry Fabric">
+<div class="item-top"><span class="item-code">RCFT280</span><span class="item-type">French Terry Fabric</span></div>
+<h4>Brushed cotton french terry 280</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>280-290 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>95%C 5%SP</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="French Terry Fabric">
+<div class="item-top"><span class="item-code">CFT350</span><span class="item-type">French Terry Fabric</span></div>
+<h4>Cotton french terry 350gsm</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>350 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%C</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="French Terry Fabric">
+<div class="item-top"><span class="item-code">RCFT330</span><span class="item-type">French Terry Fabric</span></div>
+<h4>Brushed cotton french terry 330</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>330 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%C</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="French Terry Fabric">
+<div class="item-top"><span class="item-code">BFT280</span><span class="item-type">French Terry Fabric</span></div>
+<h4>Bamboo French Terry</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>280-290 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>95%B 5%SP</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="French Terry Fabric">
+<div class="item-top"><span class="item-code">BCFT260</span><span class="item-type">French Terry Fabric</span></div>
+<h4>Bamboo Cotton French Terry</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>250-260 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>65%B 30%C 5%SP</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Cotton Woven Fabric">
+<div class="item-top"><span class="item-code">CW3232</span><span class="item-type">Cotton Woven Fabric</span></div>
+<h4>Heavy Cotton Woven</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>140-150 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%C</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Cotton Woven Fabric">
+<div class="item-top"><span class="item-code">CT3070</span><span class="item-type">Cotton Woven Fabric</span></div>
+<h4>Heavy Cotton Twill Woven</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>140-150 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%C</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Cotton Woven Fabric">
+<div class="item-top"><span class="item-code">CP3372</span><span class="item-type">Cotton Woven Fabric</span></div>
+<h4>Cotton Poplin Fabric</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>110-120 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%C</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Cotton Woven Fabric">
+<div class="item-top"><span class="item-code">CT3372</span><span class="item-type">Cotton Woven Fabric</span></div>
+<h4>Cotton Twill Fabric</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>110-120 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%C</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Cotton Woven Fabric">
+<div class="item-top"><span class="item-code">CW6060</span><span class="item-type">Cotton Woven Fabric</span></div>
+<h4>Cotton Tana Lawn 60S 9088</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>75 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%C</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Cotton Woven Fabric">
+<div class="item-top"><span class="item-code">CW80S</span><span class="item-type">Cotton Woven Fabric</span></div>
+<h4>Cotton Tana Lawn 80S Thin</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>85 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%C</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Cotton Woven Fabric">
+<div class="item-top"><span class="item-code">CW100S</span><span class="item-type">Cotton Woven Fabric</span></div>
+<h4>Cotton Tana Lawn 100S Very thin</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>58 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%C</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Cotton Woven Fabric">
+<div class="item-top"><span class="item-code">CST150</span><span class="item-type">Cotton Woven Fabric</span></div>
+<h4>Stretch cotton twill woven</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>140-150 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>95%C 5%SP</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Rib Knit Fabric">
+<div class="item-top"><span class="item-code">CRK250</span><span class="item-type">Rib Knit Fabric</span></div>
+<h4>4*2 Organic Cotton Rib Knit</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>240-250 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>95%OC 5%SP</strong></div>
+<div><span>Width</span><strong>58/59&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Rib Knit Fabric">
+<div class="item-top"><span class="item-code">CRK11</span><span class="item-type">Rib Knit Fabric</span></div>
+<h4>1x1 Cotton Rib Knit</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>240-250 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%C</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Rib Knit Fabric">
+<div class="item-top"><span class="item-code">C2K400</span><span class="item-type">Rib Knit Fabric</span></div>
+<h4>2x2 Cotton Rib knit 400gsm</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>400 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>95%P 5%SP</strong></div>
+<div><span>Width</span><strong>39/40&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Rib Knit Fabric">
+<div class="item-top"><span class="item-code">C2K300</span><span class="item-type">Rib Knit Fabric</span></div>
+<h4>2x2 Cotton Rib knit 300gsm</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>300-320 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>95%P 5%SP</strong></div>
+<div><span>Width</span><strong>47/48&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Rib Knit Fabric">
+<div class="item-top"><span class="item-code">C2K200</span><span class="item-type">Rib Knit Fabric</span></div>
+<h4>2x2 Cotton Rib knit 200gsm</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>190-200 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>95%P 5%SP</strong></div>
+<div><span>Width</span><strong>53/54&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Rib Knit Fabric">
+<div class="item-top"><span class="item-code">B2K210</span><span class="item-type">Rib Knit Fabric</span></div>
+<h4>2x2 Bamboo Rib knit 210gsm</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>210-230 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>95%B 5%SP</strong></div>
+<div><span>Width</span><strong>58/59&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Rib Knit Fabric">
+<div class="item-top"><span class="item-code">RRK300</span><span class="item-type">Rib Knit Fabric</span></div>
+<h4>4*2 Bamboo Stretch Rib Knit</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>290-300 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>95%B 5%SP</strong></div>
+<div><span>Width</span><strong>58/59&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Rib Knit Fabric">
+<div class="item-top"><span class="item-code">PRK250</span><span class="item-type">Rib Knit Fabric</span></div>
+<h4>8*2 Polyester Rib Knit</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>240-250 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%P</strong></div>
+<div><span>Width</span><strong>58/59&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Corduroy Stretch Fabric">
+<div class="item-top"><span class="item-code">CCD28</span><span class="item-type">Corduroy Stretch Fabric</span></div>
+<h4>28T Cotton stretch corduroy</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>180-190 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>97%C 3%SP</strong></div>
+<div><span>Width</span><strong>58/60&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Corduroy Stretch Fabric">
+<div class="item-top"><span class="item-code">CSD350</span><span class="item-type">Corduroy Stretch Fabric</span></div>
+<h4>Cotton stretch corduroy</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>350 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>97%C 3%SP</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Canvas Fabric">
+<div class="item-top"><span class="item-code">CA250</span><span class="item-type">Canvas Fabric</span></div>
+<h4>Cotton Canvas Fabric</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>240-250 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%C</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Pique Fabric">
+<div class="item-top"><span class="item-code">CPQ200</span><span class="item-type">Pique Fabric</span></div>
+<h4>Cotton Polo Pique Knit fabric</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>200 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%C</strong></div>
+<div><span>Width</span><strong>75/76&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Flannel Fabric">
+<div class="item-top"><span class="item-code">CFL160</span><span class="item-type">Flannel Fabric</span></div>
+<h4>Cotton Flannel Fabric</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>160-170 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%C</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Flannel Fabric">
+<div class="item-top"><span class="item-code">PFL310</span><span class="item-type">Flannel Fabric</span></div>
+<h4>Poly Flannel Fabirc</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>310 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%P</strong></div>
+<div><span>Width</span><strong>58/59&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Bamboo Jersey">
+<div class="item-top"><span class="item-code">BL240</span><span class="item-type">Bamboo Jersey</span></div>
+<h4>Bamboo Lycra Jersey</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>240-250 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>95%B 5%SP</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Muslin Fabric">
+<div class="item-top"><span class="item-code">CMD110</span><span class="item-type">Muslin Fabric</span></div>
+<h4>Double Gauze Muslin</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>100-110 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%C</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Muslin Fabric">
+<div class="item-top"><span class="item-code">BMD120</span><span class="item-type">Muslin Fabric</span></div>
+<h4>Bamboo Cotton Muslin</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>110-120 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>70%B 30%C</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Muslin Fabric">
+<div class="item-top"><span class="item-code">BGZ120</span><span class="item-type">Muslin Fabric</span></div>
+<h4>Bamboo Grid Muslin</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>110-120 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%B</strong></div>
+<div><span>Width</span><strong>47/48&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Interlock Fabric">
+<div class="item-top"><span class="item-code">CDK200</span><span class="item-type">Interlock Fabric</span></div>
+<h4>Cotton Interlock Knit Fabric</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>200-205 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%C</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Linen Fabric">
+<div class="item-top"><span class="item-code">LN9S</span><span class="item-type">Linen Fabric</span></div>
+<h4>Linen Woven 9S</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>203 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%Linen</strong></div>
+<div><span>Width</span><strong>52/53&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Linen Fabric">
+<div class="item-top"><span class="item-code">LCW110</span><span class="item-type">Linen Fabric</span></div>
+<h4>Cotton linen fabric</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>110-115 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>45%L 45%C 10%V</strong></div>
+<div><span>Width</span><strong>58/60&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Minky Fabric">
+<div class="item-top"><span class="item-code">PMK230</span><span class="item-type">Minky Fabric</span></div>
+<h4>Minky Fabric</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>220-230 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%P</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Minky Fabric">
+<div class="item-top"><span class="item-code">SQ300</span><span class="item-type">Minky Fabric</span></div>
+<h4>Squish Fabric</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>300-310 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>95%P 5%SP</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Minky Fabric">
+<div class="item-top"><span class="item-code">PRS270</span><span class="item-type">Minky Fabric</span></div>
+<h4>Ribbed Squish Fabric</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>270-280 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>92%P 8%SP</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Double Brushed Poly">
+<div class="item-top"><span class="item-code">DBP210</span><span class="item-type">Double Brushed Poly</span></div>
+<h4>Double Brushed Poly Knit</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>200-210 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>96%P 4%SP</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Double Brushed Poly">
+<div class="item-top"><span class="item-code">DBP240</span><span class="item-type">Double Brushed Poly</span></div>
+<h4>Double Brushed Poly Knit</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>240-250 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>95%P 5%SP</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Satin Fabric">
+<div class="item-top"><span class="item-code">CSS195</span><span class="item-type">Satin Fabric</span></div>
+<h4>Cotton Stretch Satin</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>195-200 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>95%C 5%SP</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Satin Fabric">
+<div class="item-top"><span class="item-code">CSS60</span><span class="item-type">Satin Fabric</span></div>
+<h4>60S Cotton stretch satin fabric</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>135 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>98%C 2%SP</strong></div>
+<div><span>Width</span><strong>58/59&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Satin Fabric">
+<div class="item-top"><span class="item-code">CSS210</span><span class="item-type">Satin Fabric</span></div>
+<h4>Cotton Stretch Satin</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>200-210 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>95%C 5%SP</strong></div>
+<div><span>Width</span><strong>56/57&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Satin Fabric">
+<div class="item-top"><span class="item-code">SSS100</span><span class="item-type">Satin Fabric</span></div>
+<h4>Polyester Shiny Stretch Satin</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>100-105 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>96%P 4%SP</strong></div>
+<div><span>Width</span><strong>53/54&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Tencel Fabric">
+<div class="item-top"><span class="item-code">TW60S</span><span class="item-type">Tencel Fabric</span></div>
+<h4>60S Tencel woven fabric</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>100-105 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%Tencel</strong></div>
+<div><span>Width</span><strong>58/59&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Tencel Fabric">
+<div class="item-top"><span class="item-code">TW30S</span><span class="item-type">Tencel Fabric</span></div>
+<h4>30S Tencel twill woven fabric</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>140-150 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%Tencel</strong></div>
+<div><span>Width</span><strong>58/59&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Athletic Knit Fabric">
+<div class="item-top"><span class="item-code">ATH300</span><span class="item-type">Athletic Knit Fabric</span></div>
+<h4>Glitter Holographic Stretch</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>250-260 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>95%P 5%SP</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Athletic Knit Fabric">
+<div class="item-top"><span class="item-code">ATH280</span><span class="item-type">Athletic Knit Fabric</span></div>
+<h4>Athletic Knit Fabric</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>280-290 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>95%P 5%SP</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="PUL">
+<div class="item-top"><span class="item-code">PBB180</span><span class="item-type">PUL</span></div>
+<h4>PUL Fabric</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>170-180 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%P</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Swim">
+<div class="item-top"><span class="item-code">PYZ220</span><span class="item-type">Swim</span></div>
+<h4>Swim Fabric</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>210-220 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>88%P 12%SP</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Multiple Fabrics">
+<div class="item-top"><span class="item-code">CWF270</span><span class="item-type">Multiple Fabrics</span></div>
+<h4>Cotton waffle knit fabric</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>260-270 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%C</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Multiple Fabrics">
+<div class="item-top"><span class="item-code">RW45</span><span class="item-type">Multiple Fabrics</span></div>
+<h4>Rayon Woven 45S10080</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>100-105 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%Rayon</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Multiple Fabrics">
+<div class="item-top"><span class="item-code">RW3068</span><span class="item-type">Multiple Fabrics</span></div>
+<h4>Rayon Woven 30S6868</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>110-115 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%R</strong></div>
+<div><span>Width</span><strong>56/57&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Multiple Fabrics">
+<div class="item-top"><span class="item-code">VS140</span><span class="item-type">Multiple Fabrics</span></div>
+<h4>Viscose Satin Woven</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>140-145 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%Viscose</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Multiple Fabrics">
+<div class="item-top"><span class="item-code">PKV260</span><span class="item-type">Multiple Fabrics</span></div>
+<h4>Korean Velvet Knit</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>250-260 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>92%P 8%SP</strong></div>
+<div><span>Width</span><strong>58/59&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Multiple Fabrics">
+<div class="item-top"><span class="item-code">LP260</span><span class="item-type">Multiple Fabrics</span></div>
+<h4>Liverpool Bullet</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>240-260 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>95%P 5%SP</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Multiple Fabrics">
+<div class="item-top"><span class="item-code">PWK280</span><span class="item-type">Multiple Fabrics</span></div>
+<h4>Polyester Waffle Knit</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>270-280 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%P</strong></div>
+<div><span>Width</span><strong>58/59&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Multiple Fabrics">
+<div class="item-top"><span class="item-code">PCH120</span><span class="item-type">Multiple Fabrics</span></div>
+<h4>Spun Chiffon Dress Fabric</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>110-120 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%P</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Multiple Fabrics">
+<div class="item-top"><span class="item-code">PS9307</span><span class="item-type">Multiple Fabrics</span></div>
+<h4>4 Way Stretch Boardshort</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>150-160 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>93%P 7%SP</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Multiple Fabrics">
+<div class="item-top"><span class="item-code">PO600</span><span class="item-type">Multiple Fabrics</span></div>
+<h4>Polyester Waterproof Oxford</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>210-220 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%P</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Multiple Fabrics">
+<div class="item-top"><span class="item-code">SS330</span><span class="item-type">Multiple Fabrics</span></div>
+<h4>Softshell Fabric</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>300-330 GSM</strong></div>
+<div><span>MOQ</span><strong>20m</strong></div>
+<div><span>Composition</span><strong>100%P</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Multiple Fabrics">
+<div class="item-top"><span class="item-code">AWJ130</span><span class="item-type">Multiple Fabrics</span></div>
+<h4>Athletic Wicking Jersey</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>130 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%P</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Multiple Fabrics">
+<div class="item-top"><span class="item-code">PSM95</span><span class="item-type">Multiple Fabrics</span></div>
+<h4>40D Stretch Mesh Fabric</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>100-105 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>93%P 7%SP</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Multiple Fabrics">
+<div class="item-top"><span class="item-code">FL1MM</span><span class="item-type">Multiple Fabrics</span></div>
+<h4>Fake Leather Vinyl 1MM</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>500-600 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%PVC</strong></div>
+<div><span>Width</span><strong>51/52&quot;</strong></div>
+</div>
+</article><article class="fabric-item" data-type="Multiple Fabrics">
+<div class="item-top"><span class="item-code">PDT250</span><span class="item-type">Multiple Fabrics</span></div>
+<h4>Polyester Towel Fabric</h4>
+<div class="spec-grid">
+<div><span>Weight</span><strong>250-260 GSM</strong></div>
+<div><span>MOQ</span><strong>1m</strong></div>
+<div><span>Composition</span><strong>100%P</strong></div>
+<div><span>Width</span><strong>57/58&quot;</strong></div>
+</div>
+</article></div>
+</section>
+<script>
+var activeType='';
+function filterFabric(type){activeType=type;document.getElementById('fabricSearch').value='';applySearch();document.getElementById('fullList').scrollIntoView({behavior:'smooth',block:'start'})}
+function applySearch(){var q=document.getElementById('fabricSearch').value.toLowerCase();var n=0;document.querySelectorAll('.fabric-item').forEach(function(card){var matchType=!activeType||card.getAttribute('data-type')===activeType;var matchText=!q||card.innerText.toLowerCase().includes(q);var show=matchType&&matchText;card.style.display=show?'block':'none';if(show)n++;});document.getElementById('fabricCount').innerText=n;}
+</script>
+<style>
+html,body{margin:0;padding:0;background:#fff;overflow:visible}
+.fabric-book{font-family:Arial,sans-serif;color:#1f2933;max-width:100%;padding:0 0 12px;background:#fff;box-sizing:border-box}
+.fabric-book *{box-sizing:border-box}
+.fabric-book h2{margin:0 0 6px;font-size:26px;color:#143f4b;letter-spacing:0}
+.fabric-book h3{margin:0 0 9px;font-size:19px;color:#143f4b;letter-spacing:0}
+.fabric-book h4{margin:8px 0 9px;font-size:15px;color:#172b36;line-height:1.2;letter-spacing:0}
+.fabric-book p{margin:0;color:#52616b;line-height:1.35}
+.intro{padding:10px 4px 10px;border-bottom:1px solid #e5edf3}
+.top-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;align-items:center}
+.top-actions button,.top-actions a{border:0;border-radius:6px;background:#174a5a;color:white;padding:9px 14px;font-size:14px;text-decoration:none;cursor:pointer;line-height:1.2;white-space:nowrap}
+.top-actions a:nth-child(2){background:#174a5a}
+.top-actions a:nth-child(3){background:#2f7d6d}
+.categories{padding:12px 4px 8px}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px}
+.type-card{text-align:left;border:1px solid #d9e2ec;background:#f8fafc;border-radius:8px;padding:10px;min-height:82px;cursor:pointer}
+.type-card:hover{background:#eef7f8;border-color:#9fc8c7}
+.type-name{display:block;font-size:14px;font-weight:700;color:#143f4b;line-height:1.2}
+.type-count{display:block;margin-top:5px;font-size:12px;color:#2f7d6d;font-weight:700}
+.type-example{display:block;margin-top:5px;font-size:12px;color:#62727f;line-height:1.25}
+.full-list{padding:10px 4px 0}
+.list-head{display:flex;gap:10px;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;margin-bottom:10px}
+.list-head input{width:min(100%,360px);box-sizing:border-box;padding:9px;border:1px solid #cbd5df;border-radius:6px;font-size:14px}
+.product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:9px;max-height:none;overflow:visible}
+.fabric-item{border:1px solid #d9e2ec;border-radius:8px;background:#fff;padding:10px;box-shadow:0 1px 0 rgba(23,74,90,.04)}
+.fabric-item:hover{border-color:#9fc8c7;background:#fbfefe}
+.item-top{display:flex;gap:8px;justify-content:space-between;align-items:flex-start;flex-wrap:wrap}
+.item-code{font-weight:700;color:#fff;background:#174a5a;border-radius:5px;padding:4px 7px;font-size:12px}
+.item-type{color:#2f7d6d;background:#eef7f8;border-radius:5px;padding:4px 7px;font-size:11px;font-weight:700}
+.spec-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+.spec-grid div{background:#f8fafc;border:1px solid #e5edf3;border-radius:6px;padding:6px;min-width:0}
+.spec-grid span{display:block;font-size:10px;color:#62727f;text-transform:uppercase;letter-spacing:0;margin-bottom:3px}
+.spec-grid strong{display:block;font-size:12px;color:#1f2933;line-height:1.2;word-break:break-word}
+@media(max-width:640px){.fabric-book h2{font-size:24px}.fabric-book h3{font-size:18px}.top-actions button,.top-actions a{font-size:13px;padding:8px 10px}.type-card{min-height:76px;padding:9px}.list-head input{width:100%}.product-grid{grid-template-columns:1fr}.spec-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:380px){.spec-grid{grid-template-columns:1fr}}
+</style>
+</div>
+
